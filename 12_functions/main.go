@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Functions are reusable blocks of code that perform a specific task. They can take parameters and return values.
+// Functions are reusable blocks of code that perform a specific task. They can take parameters and return values. In Go, functions are defined using the `func` keyword, followed by the function name, parameters, and return type(s).
 func add(a, b int) int {
 	return a + b
 }
@@ -33,6 +33,13 @@ var res = func(a, b int) int {
 	return a + b
 }
 
+// defer statement is used to ensure that a function call is performed later in a program’s execution, usually for purposes of cleanup. defer is often used where e.g. ensure and finally would be used in other languages. // Deferred function calls are executed in Last In First Out order after the surrounding function returns.
+func deferExample() {
+	defer fmt.Println("This will be printed last")
+	defer fmt.Println("This will be printed second")
+	fmt.Println("This will be printed first")
+}
+
 func main() {
 	result := add(5, 10)
 	fmt.Println("The sum is:", result)
@@ -60,4 +67,6 @@ func main() {
 		return a * b
 	}(5, 10) // Immediately Invoked Function Expression (IIFE)
 	fmt.Println("The result of the IIFE is:", resFunction)
+
+	deferExample()
 }
