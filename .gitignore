@@ -1,1 +1,21 @@
 /Assets
+.DS_Store
+*.log
+*.tmp
+*.bak
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+# Ignore Go build artifacts
+*.out
+*.test
+# Ignore vendor directory
+vendor/
+# Ignore IDE/editor specific files
+.idea/
+.vscode/
+# Ignore OS generated files
+Thumbs.db   
+Desktop.ini
+
