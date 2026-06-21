@@ -1,21 +1,34 @@
-/Assets
-.DS_Store
-*.log
-*.tmp
-*.bak
-# Ignore compiled binaries
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
 *.exe
+*.exe~
 *.dll
 *.so
-# Ignore Go build artifacts
-*.out
+*.dylib
+
+# Test binary, built with `go test -c`
 *.test
-# Ignore vendor directory
-vendor/
-# Ignore IDE/editor specific files
+
+# Code coverage profiles and other test artifacts
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# env file
+.env
+
+# Editor/IDE
 .idea/
 .vscode/
-# Ignore OS generated files
-Thumbs.db   
-Desktop.ini
 
+.agents
