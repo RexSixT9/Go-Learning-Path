@@ -14,6 +14,8 @@
 
 // In this example, we create a channel of type string using make(chan string). We then send a message "Hello, World!" to the channel using the <- operator. Finally, we receive the message from the channel and print it to the console. Channels are a powerful feature in Go that allow for communication and synchronization between goroutines. The program will deadlock because the main goroutine is trying to send a message to the channel before any goroutine is ready to receive it. To avoid this, you can use a separate goroutine to send the message or use buffered channels.
 
+/*
+
 package main
 
 import (
@@ -117,4 +119,31 @@ func main() {
 	// time.Sleep(time.Second)            // Sleep for a second to allow the goroutine to finish
 	// messagesChannel <- "Hello, World!" // Send a message to the channel
 
+}
+*/
+
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+type User struct {
+	ID   int
+	Name string
+}
+
+func main() {
+	ch := make(chan User) // Create a channel of type User, unbuffered channel
+	go func() {
+		time.Sleep(200 * time.Millisecond) // Simulate some processing time
+		fmt.Println("Sending user to channel...")
+		// blocking send operation, will wait until the main goroutine receives the value
+		ch <- User{ID: 1, Name: "John"} // Send a User struct to the channel
+		fmt.Println("User sent to channel.")
+	}()
+	fmt.Println("Waiting to receive user from channel...")
+	user := <-ch // blocking receive operation, will wait until the goroutine sends the value
+	fmt.Printf("Received user: %+v\n", user)
 }
