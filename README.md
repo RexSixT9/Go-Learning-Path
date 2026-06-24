@@ -55,6 +55,7 @@ After that, continue through the rest of the learning order below.
 28. [Panic and recover](./28_panic_recover/main.go)
 29. [Reflection](./29_reflection/main.go)
 30. [Modules](./30_module/cmd/app/main.go)
+31. [JWT and RBAC](./JWT%20and%20RBAC/cmd/api/main.go)
 
 ## Practice Sections
 
@@ -63,6 +64,7 @@ After that, continue through the rest of the learning order below.
 - [HTTP GET example](./http_module/3_http_get/main.go)
 - [Module demo app](./30_module/cmd/app/main.go)
 - [REST API notes CRUD](./Rest%20API/notes_crud/cmd/api/main.go)
+- [JWT and RBAC API](./JWT%20and%20RBAC/cmd/api/main.go)
 
 ## Quick Topic Links
 
@@ -71,6 +73,10 @@ After that, continue through the rest of the learning order below.
 - [API routes](./Rest%20API/notes_crud/routes/routes.go)
 - [Note handler](./Rest%20API/notes_crud/internal/handlers/note_handler.go)
 - [Database config](./Rest%20API/notes_crud/internal/config/config.go)
+- [JWT auth helper](./JWT%20and%20RBAC/internal/auth/jwt.go)
+- [Auth middleware](./JWT%20and%20RBAC/internal/middleware/auth.go)
+- [Role middleware](./JWT%20and%20RBAC/internal/middleware/roles.go)
+- [User handler](./JWT%20and%20RBAC/internal/user/handler.go)
 
 ## Common Student Roadmap
 
@@ -84,6 +90,7 @@ If you are learning Go for the first time, this is a simple path:
 6. Study concurrency with goroutines and channels
 7. Learn files, modules, and advanced features
 8. Build small projects and APIs
+9. Practice auth flows with JWT and RBAC
 
 ## How To Study
 
