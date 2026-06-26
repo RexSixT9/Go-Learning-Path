@@ -59,20 +59,25 @@ After that, continue through the rest of the learning order below.
 
 ## Practice Sections
 
-- [HTTP server basics](./http_module/1_http_server/main.go)
-- [Multiple routes](./http_module/2_http_multiple_routes/main.go)
-- [HTTP GET example](./http_module/3_http_get/main.go)
+- [HTTP server basics](./HTTP%20Module/1_http_server/main.go)
+- [Multiple routes](./HTTP%20Module/2_http_multiple_routes/main.go)
+- [HTTP GET example](./HTTP%20Module/3_http_get/main.go)
 - [Module demo app](./30_module/cmd/app/main.go)
-- [REST API notes CRUD](./Rest%20API/notes_crud/cmd/api/main.go)
+- [Email dispatcher](./Practice%20Projects/email-dispatcher/main.go)
+- [REST API notes CRUD](./Practice%20Projects/notes_crud/cmd/api/main.go)
+- [Students CRUD API](./Practice%20Projects/students-crud/cmd/students-api/main.go)
+- [Todo API](./Practice%20Projects/Todo%20API/cmd/api/main.go)
 - [JWT and RBAC API](./JWT%20and%20RBAC/cmd/api/main.go)
 
 ## Quick Topic Links
 
 - [Go module entry file](./30_module/cmd/app/main.go)
-- [API server router](./Rest%20API/notes_crud/internal/server/router.go)
-- [API routes](./Rest%20API/notes_crud/routes/routes.go)
-- [Note handler](./Rest%20API/notes_crud/internal/handlers/note_handler.go)
-- [Database config](./Rest%20API/notes_crud/internal/config/config.go)
+- [Email dispatcher producer](./Practice%20Projects/email-dispatcher/producer.go)
+- [Email dispatcher consumer](./Practice%20Projects/email-dispatcher/consumer.go)
+- [API server router](./Practice%20Projects/notes_crud/internal/server/router.go)
+- [API routes](./Practice%20Projects/notes_crud/routes/routes.go)
+- [Note handler](./Practice%20Projects/notes_crud/internal/handlers/note_handler.go)
+- [Database config](./Practice%20Projects/notes_crud/internal/config/config.go)
 - [JWT auth helper](./JWT%20and%20RBAC/internal/auth/jwt.go)
 - [Auth middleware](./JWT%20and%20RBAC/internal/middleware/auth.go)
 - [Role middleware](./JWT%20and%20RBAC/internal/middleware/roles.go)
